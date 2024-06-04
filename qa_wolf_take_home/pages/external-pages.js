@@ -1,11 +1,10 @@
 // This file contains functionality/data that will be reused across multiple test files (possibly)
-import { Utils } from './utils/utils';
+import { Utils } from '../utils/utils';
 const { expect } = require('@playwright/test');
 
-exports.HackerNewsMainPage = class HackerNewsMainPage {
+exports.ExternalPage = class ExternalPage {
 
-    // element selectors
-    static mainPageTableSelector = "#hnmain > tbody > tr:nth-child(3) > td > table > tbody";
+    
 
   /**
    * @param {import('@playwright/test').Page} page
